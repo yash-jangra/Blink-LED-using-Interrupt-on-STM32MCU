@@ -28,28 +28,46 @@ This project demonstrates how to control an LED connected to the STM32F411CEU6 m
    git clone https://github.com/yourusername/stm32f411_led_blink.git
 
 
-Open the Project Open the project in STM32CubeIDE or your preferred STM32 development environment.
+## Installation and Setup
 
-Build the Project Compile the project to generate the firmware. Ensure that you have the STM32 HAL library properly set up.
+1. **Open the Project**  
+   Open the project in STM32CubeIDE or your preferred STM32 development environment.
 
-Flash the Firmware Use an ST-Link or other compatible programmer to flash the firmware onto the STM32F411CEU6 board.
+2. **Build the Project**  
+   Compile the project to generate the firmware. Ensure that you have the STM32 HAL library properly set up.
 
-Usage
-Power On: Connect the STM32F411CEU6 board to a power source.
-Press the Button: Press the button connected to PA0.
-Observe: The LED connected to PC13 will blink three times, each cycle lasting approximately 500 milliseconds.
-Code Overview
-main.c: Contains the main application code and initialization functions.
-stm32f4xx_it.c: Contains the interrupt service routine for handling button presses and LED blinking.
-Future Updates
+3. **Flash the Firmware**  
+   Use an ST-Link or other compatible programmer to flash the firmware onto the STM32F411CEU6 board.
+
+## Usage
+
+1. **Power On**  
+   Connect the STM32F411CEU6 board to a power source.
+
+2. **Press the Button**  
+   Press the button connected to PA0.
+
+3. **Observe**  
+   The LED connected to PC13 will blink three times, each cycle lasting approximately 500 milliseconds.
+
+## Code Overview
+
+- **`main.c`**: Contains the main application code and initialization functions.
+- **`stm32f4xx_it.c`**: Contains the interrupt service routine for handling button presses and LED blinking.
+
+## Future Updates
+
 This project will be updated with additional features and modifications, including:
 
-PWM Control: Implement PWM for LED brightness control.
-Additional Interrupts: Handling more complex interrupt scenarios.
-Button Debouncing: Enhanced software or hardware debouncing techniques.
-Additional Peripherals: Integration with other peripherals and sensors.
-Contributing
+- **PWM Control**: Implement PWM for LED brightness control.
+- **Additional Interrupts**: Handling more complex interrupt scenarios.
+- **Button Debouncing**: Enhanced software or hardware debouncing techniques.
+- **Additional Peripherals**: Integration with other peripherals and sensors.
+
+## Contributing
+
 Feel free to contribute to the project by opening issues or submitting pull requests. Contributions and suggestions are welcome!
 
-License
-This project is licensed under the MIT License - see the LICENSE file for detai
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
